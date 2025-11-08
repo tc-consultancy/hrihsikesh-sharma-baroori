@@ -9,12 +9,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Priyanshu Tiwari - Full-Stack Developer",
-  description: "Full-stack developer creating exceptional digital experiences with modern web technologies.",
+  title: "Hrishikesh Sharma Baroori",
+  description: "Turning Ideas into Scalable Java Applications",
   keywords: "full-stack developer, react, next.js, typescript, web development",
   authors: [{ name: "Priyanshu Tiwari" }],
   openGraph: {
-    title: "Priyanshu Tiwari - Full-Stack Developer",
+    title: "Hrishikesh Sharma Baroori - Full-Stack Developer",
     description: "Creating exceptional digital experiences",
     type: "website",
   },
