@@ -224,7 +224,7 @@ const HandDrawnIcons = {
 // Floating Hand-drawn Elements
 const FloatingElements = () => {
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div className="md:fixed hidden inset-0 pointer-events-none overflow-hidden z-0">
       {/* Paper Plane - Top Left */}
       <motion.div className="absolute top-20 left-16 animate-drift" style={{ animationDelay: "0s" }}>
         <HandDrawnIcons.PaperPlane />
@@ -494,7 +494,7 @@ const CallStackCard = ({ project, index, totalCards }: { project: any; index: nu
   const zIndex = useTransform(scrollYProgress, [0, 0.8, 1], [index + 1, index + 1, totalCards + index])
 
   return (
-    <motion.div ref={cardRef} style={{ y, scale, opacity, zIndex }} className="sticky top-32 w-full px-4 sm:px-6">
+    <motion.div ref={cardRef} style={{ y, scale, opacity, zIndex }} className="sticky top-32 w-full sm:px-6">
       <motion.div
         className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
         whileHover={{ y: -5 }}
@@ -782,7 +782,7 @@ export default function Portfolio() {
             </div>
 
             {/* Right Column - Video Section */}
-            <div className="flex-1 flex items-center justify-center">
+            <div className="flex-1 w-full flex items-center justify-center mt-12 md:mt-0">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -804,7 +804,7 @@ export default function Portfolio() {
                   transition={{ delay: 0.9, duration: 0.5 }}
                   className="relative"
                 >
-                  <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg overflow-hidden h-80">
+                  <div className="w-full aspect-square md:aspect-[4/3] bg-slate-100 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg overflow-hiddens h-96 md:h-80">
                     <div className="w-full h-full flex items-center justify-center">
                       <div className="text-center">
                         <div className="w-16 h-16 bg-slate-300 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-6">
