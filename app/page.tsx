@@ -494,12 +494,12 @@ const CallStackCard = ({ project, index, totalCards }: { project: any; index: nu
   const zIndex = useTransform(scrollYProgress, [0, 0.8, 1], [index + 1, index + 1, totalCards + index])
 
   return (
-    <motion.div ref={cardRef} style={{ y, scale, opacity, zIndex }} className="sticky top-32 w-full sm:px-6">
+    <motion.div ref={cardRef} style={{ y, scale, opacity, zIndex }} className="sticky top-20 md:top-32 w-full sm:px-6">
       <motion.div
         className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
         whileHover={{ y: -5 }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6 sm:gap-8 items-center">
           {/* Text section */}
           <div>
             <div className="flex flex-wrap items-center gap-3 mb-4 sm:mb-6">
@@ -508,7 +508,7 @@ const CallStackCard = ({ project, index, totalCards }: { project: any; index: nu
               </span>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag: string, tagIndex: number) => (
-                  <Badge key={tagIndex} variant="secondary" className="text-xs">
+                  <Badge key={tagIndex} variant="secondary" className="text-[10px]">
                     {tag}
                   </Badge>
                 ))}
@@ -519,7 +519,7 @@ const CallStackCard = ({ project, index, totalCards }: { project: any; index: nu
               {project.title}
             </h3>
 
-            <p className="text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300  sm:mb-8 text-sm md:text-base sm:text-lg leading-relaxed">
               {project.description}
             </p>
 

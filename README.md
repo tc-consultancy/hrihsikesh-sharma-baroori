@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).$ ssh -T git@github.comgit remote set-url origin git@github.com:tc-consultancy/hrihsikesh-sharma-baroori.git
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).$ ssh -T git@github.com
+
+git config user.name  "tc-consultancy"
+git config user.email "developer@tcconsultingservices.in"
+
+git remote set-url origin git@github.com:tc-consultancy/sushanth-kodipyaka.git
+
+
+
+git remote set-url origin git@github.com:tc-consultancy/hrihsikesh-sharma-baroori.git
 
 
 ## Getting Started
